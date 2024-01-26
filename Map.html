@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="map.css">
+    <title>The Mighty Mouse!</title>
+</head>
+<body>
+    <div id="game-container"></div>
+    <div id="hiddenScreen" class="hidden-screen">
+        <div id="playerHealthBar" class="health-bar">
+            <div id="playerHealthFill" class="health-fill"></div>
+          </div>
+          
+          <div id="enemyHealthBar" class="health-bar">
+            <div id="enemyHealthFill" class="health-fill"></div>
+          </div>
+        <div class="hidden-content">
+            <div class="button-box">
+                <button class="menu-button-1" id="fightButton">Fight</button>
+                <button class="menu-button-2" id="itemsButton">Items</button>
+                <button class="menu-button-3" id="runButton">Run</button>
+            </div>
+            <div class="box-atk hidden-options">
+                <button class="menu-button-1" id="atk1Button">Water Attack</button>
+                <button class="menu-button-2" id="atk2Button">Fire Attack</button>
+                <button class="menu-button-3" id="atk3Button">Plant Attack</button>
+                <button class="menu-button-4" id="goBackAtkButton">Go back</button>
+            </div>
+            <div class="box-items hidden-options">
+                <button class="menu-button-1" id="hpPotButton">Health potion</button>
+                <button class="menu-button-2" id="dmgPotButton">+5 Damage</button>
+                <button class="menu-button-3" id="killButton">kill</button>
+                <button class="menu-button-4" id="goBackItemsButton">Go back</button>
+            </div>        
+    </div>
+    <div id="gameOverScreen" class="fullscreen-overlay">
+        <div class="hidden-content">
+            <h2>Game Over!</h2>
+        </div>
+    </div>
+
+    <script src="map.js"></script>
+</body>
+</html>

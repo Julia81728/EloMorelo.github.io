@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #313131;
+}
+
+#game-container {
+  display: grid;
+  grid-template-columns: repeat(10, 50px);
+  gap: 5px;
+}
+
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
+  color: #fff; /* Text color for the game over content */
+  display: none; /* Initially hide the overlay */
+}
+
+.fullscreen-overlay .hidden-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#hiddenScreen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 549px;
+  height: 549px;
+  background-image: url('sprite/background.png');
+  background-size: cover; 
+  border: 4x solid #000;
+  z-index: 2;
+  display: none;
+}
+
+
+
+
+
+
+.button-box {
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 545px;
+  height: 100px;
+  border: 2px solid #cf1212;
+  border-radius: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-box button {
+  background-color: #ffffff; 
+  color: black;
+  border-radius: 1px;
+  font-size: 24px;
+  flex: 1;
+  margin: 0px;
+}
+
+.box-atk{
+  display: none;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 545px;
+  height: 100px;
+  border: 2px solid #cf1212;
+  border-radius: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box-atk button{
+  background-color: #e7e7e7; 
+  color: black;
+  border-radius: 1px;
+  font-size: 24px;
+  flex: 1;
+  margin: 0px;
+
+}
+
+.box-items{
+  display: none;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 545px;
+  height: 100px;
+  border: 2px solid #cf1212;
+  border-radius: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box-items button{
+  background-color: #e7e7e7; 
+  color: black;
+  border-radius: 1px;
+  font-size: 24px;
+  flex: 1;
+  margin: 0px;
+
+}
+
+
+.hidden-content {
+  padding: 20px; 
+}
+
+.hidden {
+  display: none;
+}
+
+
+.cell {
+  width: 50px;
+  height: 50px;
+  background-color: #646464;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+.player {
+  background-color: #3498db;
+  color: #fff;
+  animation: moveAnimation 0.7s ease-in-out;
+  transform-origin: top left; 
+}
+
+.health-bar {
+  position: absolute;
+  width: 200px;
+  height: 20px;
+  background-color: #f5f5f5; /* Light gray background color */
+  border: 2px solid #ccc; /* Light gray border */
+  border-radius: 0px; /* Rounded corners */
+  overflow: hidden; /* Hide overflowing content (health fill) */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Subtle box shadow for depth */
+}
+
+.health-bar:hover {
+  border-color: #2196f3; /* Change border color on hover */
+  box-shadow: 0 0 10px rgba(33, 150, 243, 0.5); /* Slightly stronger box shadow on hover */
+}
+
+.health-fill {
+  height: 100%;
+  background-color: #6f1515;
+  transition: width 0.3s ease-in-out; /* Smooth transition for width changes */
+}
+
+#playerHealthBar {
+  top: 20px; 
+  left: 20px; 
+}
+
+#enemyHealthBar {
+  top: 20px; 
+  right: 20px; 
+}
+
+
+
+@keyframes moveAnimation {
+  from {
+    transform: translate(var(--translateX, 0), var(--translateY,0));
+  }
+  to {
+    transform: translate(0,0);
+  }
+}
