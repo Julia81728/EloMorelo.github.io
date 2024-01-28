@@ -59,61 +59,67 @@ body {
   transform: translateX(-50%);
   width: 545px;
   height: 100px;
-  border: 2px solid #cf1212;
+  border: 2px solid #000000;
   border-radius: 0px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .button-box button {
-  background-color: #ffffff; 
-  color: black;
-  border-radius: 1px;
-  font-size: 24px;
+  font-family: 'Audiowide', sans-serif;
+  font-family: 'Pixelify Sans', sans-serif;
+  background-color: rgb(37, 37, 37); 
+  color: rgb(255, 255, 255);
+  border-radius: 0px;
+  font-size: 32px;
   flex: 1;
   margin: 0px;
 }
 
 .box-atk{
-  display: none;
+  display: flex;
   position: absolute;
   bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
   width: 545px;
   height: 100px;
-  border: 2px solid #cf1212;
+  border: 2px solid #000000;
   border-radius: 0px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .box-atk button{
-  background-color: #e7e7e7; 
-  color: black;
-  border-radius: 1px;
-  font-size: 24px;
+  font-family: 'Audiowide', sans-serif;
+  font-family: 'Pixelify Sans', sans-serif;
+  background-color: rgb(37, 37, 37); 
+  color: rgb(255, 255, 255);
+  border-radius: 0px;
+  font-size: 32px;
   flex: 1;
   margin: 0px;
 
 }
 
 .box-items{
-  display: none;
+  display: flex;
   position: absolute;
   bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
   width: 545px;
   height: 100px;
-  border: 2px solid #cf1212;
+  border: 2px solid #000000;
   border-radius: 0px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .box-items button{
-  background-color: #e7e7e7; 
-  color: black;
-  border-radius: 1px;
-  font-size: 24px;
+  font-family: 'Audiowide', sans-serif;
+  font-family: 'Pixelify Sans', sans-serif;
+  background-color: rgb(37, 37, 37); 
+  color: rgb(255, 255, 255);
+  border-radius: 0px;
+  font-size: 32px;
   flex: 1;
   margin: 0px;
 
