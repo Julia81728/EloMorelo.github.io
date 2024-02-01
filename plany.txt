@@ -1,0 +1,5 @@
+dźwięki do przycisków done
+timeout między atakami
+punktacja
+zapis nickname
+victory screen

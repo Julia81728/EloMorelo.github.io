@@ -7,20 +7,23 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="Menu.css">
     <script src="Menu.js" defer></script>
+    <audio id="clickSound" preload="auto">
+      <source src="sound/click.mp3" type="audio/mp3">
+  </audio>
+  
     <title>Menu</title>
 </head>
 <body>
     <div class="Menu-text">
         <p class="title-text">The mighty mouse</p>
         <p class="subtitle-text">Your name:</p>
-        <input type="text" class="css-input" />
+        <input type="text" id="playerName" class="css-input" />
     </div>
     
       <a href="Map.html" class="btn-link">
-        <button type="button" id="saveButton" class="btn" name="Save">
+        <button type="button" id="saveButton" class="btn" name="saveButton">
           Start Game
       </button>
     </a>
 </body>
 </html>
-
