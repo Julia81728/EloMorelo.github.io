@@ -9,8 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let kill = 0;
   let score = 0;
 
-  //test
-
   function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
